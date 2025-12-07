@@ -1,3 +1,3 @@
-create database if not exists erp_ind;
+create database if not exists sistemaERP;
 
 use erp_ind;
