@@ -1,12 +1,11 @@
-create database if not exists bd_erp;
+create database if not exists sistemaERP;
 
-create table if not exists usuarios(
-id_usuario int not null,
-nome varchar (100),
-endereco varchar(100),
-rg varchar(100),
-cpf bigint(13),
+use erp_ind;
 
-primary key(id_usuario)
 
+create table produtos(
+    id_produto int auto_increment,
+    nome_produto varchar (50),
+    preco_produto decimal (10,2)
 );
+
