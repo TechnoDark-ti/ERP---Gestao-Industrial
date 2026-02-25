@@ -1,12 +1,10 @@
 # SOFTWARE ERP DE GERENCIAMENTO DE RECURSOS
 
 ## Sobre
-Sistema de gerenciamento industrial para controle de estoque, financeiro e producao. 
+Sistema de gerenciamento industrial para controle de estoque, financeiro, controladoria, frotas, producao, fiscal, almoxarifado, comercial e estoque. 
 
 ## Technologias Utilizadas
-- G++ 17
-- Qt
-- MySQL
+
 
 ## Como Construir
 ~~~bash
