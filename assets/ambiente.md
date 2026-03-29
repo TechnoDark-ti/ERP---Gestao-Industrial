@@ -1,7 +1,3 @@
-Excelente escolha! A stack **Vue.js + Laravel + PostgreSQL** é uma combinação moderna, muito utilizada no mercado e, o melhor: **é mais amigável para hardware modesto do que o combo Spring Boot + React + Docker**. Vamos entender por quê e como você pode tirar o máximo proveito do seu Positivo Motion.
-
----
-
 ## Por que essa stack é mais adequada?
 
 1.  **Laravel (PHP) vs Spring Boot (Java)**  
@@ -40,14 +36,17 @@ Antes de instalar qualquer coisa, vamos garantir que seu Debian está otimizado:
 ### 2. **Instale os pacotes essenciais**
 ```bash
 sudo apt update
-sudo apt install nginx postgresql php8.2-fpm php8.2-mbstring php8.2-xml php8.2-pgsql php8.2-zip php8.2-curl php8.2-opcache composer nodejs npm
+sudo apt install -y nginx postgresql php8.2-fpm php8.2-mbstring \
+                    php8.2-xml php8.2-pgsql php8.2-zip php8.2-curl\
+                    php8.2-opcache composer nodejs npm
+
 ```
 
 - **PHP 8.2** é a versão recomendada para Laravel 10/11.  
 - **Nginx** como servidor web leve (substitui o Apache, que é mais pesado).  
 - **PostgreSQL** será instalado via apt, já otimizado para rodar como serviço.
 
-### 3. **Configure o PostgreSQL para economia de memória**
+### 3. **Configure o PostgreSQL para otimização de memória**
 Edite `/etc/postgresql/15/main/postgresql.conf` (ou versão correspondente) e ajuste:
 ```conf
 shared_buffers = 256MB          # Reduza para 256MB (padrão era 128MB, mas 256 é ok)
